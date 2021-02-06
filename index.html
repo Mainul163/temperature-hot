@@ -40,7 +40,7 @@
 const input=document.getElementById("findOut")
      document.getElementById("click").addEventListener("click",function(){
 
-        fetch('http://api.openweathermap.org/data/2.5/weather?q='+ input.value+'&appid=25dc6ed1f0cb985e1493cbaa0e40fd1c')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q='+ input.value+'&appid=25dc6ed1f0cb985e1493cbaa0e40fd1c')
        .then(response => response.json())
        .then(data => {
            console.log(data);
