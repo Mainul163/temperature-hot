@@ -43,6 +43,7 @@ const input=document.getElementById("findOut")
         fetch('http://api.openweathermap.org/data/2.5/weather?q='+ input.value+'&appid=25dc6ed1f0cb985e1493cbaa0e40fd1c')
        .then(response => response.json())
        .then(data => {
+           console.log(data);
            const name=data['name'];
            const temp=data['main']['temp'];
            const weather=data['weather'][0]['description'];
